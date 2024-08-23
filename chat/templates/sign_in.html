@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+</head>
+<body>
+<div style="display: flex-col; justify-content: space-between">
+    <div style="text-align: center; font-size: 5em; height: 400px">Login</div>
+    <div style="width: 500px; height: 300px; margin: 0 auto; display: flex; align-items: center;
+    justify-content: center;">
+        <form action="{{ url_for('login') }}" method="POST" style="height: 100%; width: 80%; padding-top: 50px;">
+            <div style="height: 80px; width: 96%;">
+                <input type="text" name="username" id="username" placeholder="name" style="height: 50px; width: 100%; padding-left: 10px;">
+            </div>
+            <div style="height: 80px; width: 96%;">
+                <input type="text" name="useremail" id="useremail" placeholder="email" style="height: 50px; width: 100%; padding-left: 10px;">
+            </div>
+            <div style="padding-top: 30px; display: flex; justify-content: end;">
+                <button type="submit"
+                        style="height: 40px; width: 100px; background-color: #edabe7; border: none;">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+    <div style="height: 200px"></div>
+</div>
+</body>
+</html>
